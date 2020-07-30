@@ -157,7 +157,8 @@
             ({
                 type: "post", //post,get,put,delete
                 url: "/test",  //http://localhost/test
-                data: dataToServer
+                data: dataToServer //JSON.stringify(dataToServer)
+                //contentType:"application /json"
             }).then(function(dataFromServer)
             {
             $("#resultSpan").text(dataFromServer);
